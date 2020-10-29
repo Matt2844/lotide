@@ -19,16 +19,16 @@ const assertEqual = function (actual, expected) {
 2. If no key exists, undefined
 */
 
-const findKeyByValue = function (obj, show) {
-  for (let key of Object.keys(obj)) {
-    if (key === show) {
-      console.log(obj[key])
-    } else {
-      undefined;
-    }
-  }
+//const findKeyByValue = function (obj, show) {
+/* for (let key of Object.keys(obj)) {
+   if (obj[key] === show) {
+     console.log(obj[key])
+   } else {
+     undefined;
+   }
+ }
 }
-
+*/
 
 
 
@@ -41,6 +41,16 @@ const bestTVShowsByGenre = {
   drama: "The Wire"
 };
 
+// Second draft of answer
+let findKeyByValue = function (obj, show) {
+  for (let key in obj) {
+    if (obj[key] === show) {
+      return show;
+    } else {
+      return undefined;
+    }
+  }
+}
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+console.log((findKeyByValue(bestTVShowsByGenre, "The Wire")), "drama");
+//assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
