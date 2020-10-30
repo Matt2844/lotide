@@ -30,10 +30,7 @@ const assertEqual = function (actual, expected) {
 }
 */
 
-
-
-
-
+/*
 // Test assertions
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
@@ -51,6 +48,33 @@ let findKeyByValue = function (obj, show) {
     }
   }
 }
+*/
+
+// Find Key By Value function
+
+// Scan the object and return the first key which contains the given value. 
+// If no value: undefined
+
+// TO FIX: Returns "drama", "drama". fix duplicate. 
+
+const findKeyByValue = function (obj, show) {
+  const entries = Object.entries(obj);
+
+  for (const [key, value] of entries) {
+    if (show === value) {
+      return key;
+    } else {
+      undefined
+    }
+  }
+};
+
+const bestTVShowsByGenre = {
+  sci_fi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama: "The Wire"
+}
 
 console.log((findKeyByValue(bestTVShowsByGenre, "The Wire")), "drama");
-//assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy");
