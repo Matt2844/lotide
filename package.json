@@ -1,0 +1,26 @@
+{
+  "name": "matthewhenryfordlotide",
+  "version": "1.0.0",
+  "description": "Copy of Lodash library for learning purposes",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matt2844/lotide.git"
+  },
+  "author": "Matthew Ford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matt2844/lotide/issues"
+  },
+  "homepage": "https://github.com/Matt2844/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0"
+  }
+}
