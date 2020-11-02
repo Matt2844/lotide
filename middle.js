@@ -1,10 +1,10 @@
 // assertArraysEqual function
-const isArrEqual = function (arrOne, arrTwo) {
+const isArrEqual = function(arrOne, arrTwo) {
   return arrOne.join() === arrTwo.join() ? "True, match." : "False, NO match";
 }
 
 //eqArrays function
-const eqArrays = function (arrOne, arrTwo) {
+const eqArrays = function(arrOne, arrTwo) {
   return arrOne !== arrTwo ? true : false;
 }
 
@@ -14,7 +14,7 @@ const eqArrays = function (arrOne, arrTwo) {
 //PLAN: return the middle element of a provided array. Two elements if array is even. Return empty if array is two elements or less. 
 //STEPS: 
 
-const middle = function (arr) {
+const middle = function(arr) {
   const mid = [];
 
   if (arr.length <= 2) {
@@ -42,7 +42,7 @@ console.log(middle([1, 2, 3, 4])) // => [2, 3]
 console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
 
 
-
+module.exports = middle
 
 
 
