@@ -1,4 +1,4 @@
-const takeUntil = function (arr, callback) {
+const takeUntil = function(arr, callback) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === "stop") {
       callback(arr);
@@ -6,7 +6,7 @@ const takeUntil = function (arr, callback) {
   }
 }
 
-const foundAction = function (arr) {
+const foundAction = function(arr) {
   let sliceVal = arr.indexOf("stop");
   console.log(arr.slice(0, sliceVal));
 }
@@ -15,7 +15,7 @@ const foundAction = function (arr) {
 
 takeUntil(["this", "is", "spart...", "an", "array", "stop", "wait", "what"], foundAction);
 
-
+module.exports = takeUntil
 // NOTES
 // return a "slice of the "array with elements taken from beginning
 // it should keep going until the call/predicate return a truthty value
@@ -40,10 +40,10 @@ console.log(results2);
 */
 
 // TEST STUFF
-const isArrEqual = function (arrOne, arrTwo) {
+const isArrEqual = function(arrOne, arrTwo) {
   return arrOne.join() === arrTwo.join() ? "True, match." : "False, NO match";
 }
 
-const eqArrays = function (arrOne, arrTwo) {
+const eqArrays = function(arrOne, arrTwo) {
   return arrOne !== arrTwo ? true : false;
 }

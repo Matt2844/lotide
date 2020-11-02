@@ -1,5 +1,5 @@
 // Assert Equal function from previous exercise. 
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual !== expected) {
     console.log(`Assertion Failed: ${actual} !== ${expected}`);
   } else if (actual === expected) {
@@ -9,7 +9,7 @@ const assertEqual = function (actual, expected) {
 
 // New problem countLetters below
 // Automatically adds a letter key and updates its count. 
-const countLetters = function (str) {
+const countLetters = function(str) {
   const arr = str.split('');
   const resultObj = {};
 
@@ -27,3 +27,5 @@ const countLetters = function (str) {
 
 
 console.log(countLetters('LHL'))
+
+module.exports = countLetters; 

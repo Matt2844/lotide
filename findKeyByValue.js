@@ -1,5 +1,5 @@
 //Assert Equal function 
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual !== expected) {
     console.log(`Assertion Failed: ${actual} !== ${expected}`);
   } else if (actual === expected) {
@@ -19,17 +19,17 @@ const assertEqual = function (actual, expected) {
 2. If no key exists, undefined
 */
 
-//const findKeyByValue = function (obj, show) {
-/* for (let key of Object.keys(obj)) {
-   if (obj[key] === show) {
-     console.log(obj[key])
-   } else {
-     undefined;
-   }
- }
+const findKeyByValue = function(obj, show) {
+  for (let key of Object.keys(obj)) {
+    if (obj[key] === show) {
+      console.log(obj[key])
+    } else {
+      undefined;
+    }
+  }
 }
-*/
 
+module.exports = findKeyByValue
 /*
 // Test assertions
 const bestTVShowsByGenre = {
@@ -57,7 +57,7 @@ let findKeyByValue = function (obj, show) {
 
 // TO FIX: Returns "drama", "drama". fix duplicate. 
 
-const findKeyByValue = function (obj, show) {
+const findKeyByValue = function(obj, show) {
   const entries = Object.entries(obj);
 
   for (const [key, value] of entries) {

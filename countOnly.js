@@ -1,5 +1,7 @@
+const countLetters = require("./countLetters");
+
 //AssertEqual test function
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual !== expected) {
     console.log(`Assertion Failed: ${actual} !== ${expected}`);
   } else if (actual === expected) {
@@ -14,7 +16,7 @@ const assertEqual = function (actual, expected) {
 // - allItems = list of items [arr] strings
 // OBJECTIVE: Function should report back how many instances of each string were found in the allItems array of strings.  
 
-const countOnly = function (allItems, itemsToCount) {
+const countOnly = function(allItems, itemsToCount) {
   const results = {}
 
   for (const item of allItems) {
@@ -51,3 +53,5 @@ assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
+
+module.exports = countOnly; 

@@ -1,6 +1,6 @@
 // FIND KEY FUNCTION
 
-const findKey = function (obj, callback) {
+const findKey = function(obj, callback) {
   const keys = Object.keys(obj);
   const entries = Object.entries(obj);
   const values = Object.values(obj);
@@ -13,7 +13,7 @@ const findKey = function (obj, callback) {
   callback()
 }
 
-const errorMsg = function () {
+const errorMsg = function() {
   console.log(undefined);
 }
 
@@ -24,6 +24,8 @@ findKey({
   LHL: '9',
 }, errorMsg);
 
+
+module.exports = findKey
 
 
 // EXAMPLE INPUT
@@ -43,7 +45,7 @@ findKey({
 
 // TEST FUNCTIONS
 
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual !== expected) {
     console.log(`Assertion Failed: ${actual} !== ${expected}`);
   } else if (actual === expected) {

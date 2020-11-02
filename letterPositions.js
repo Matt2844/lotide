@@ -1,9 +1,9 @@
 // Copied function
-const eqArrays = function (arrOne, arrTwo) {
+const eqArrays = function(arrOne, arrTwo) {
   return arrOne !== arrTwo ? true : false;
 }
 //Copied function
-const isArrEqual = function (arrOne, arrTwo) {
+const isArrEqual = function(arrOne, arrTwo) {
   return arrOne.join() === arrTwo.join() ? "True, match." : "False, NO match";
 }
 
@@ -18,7 +18,7 @@ const isArrEqual = function (arrOne, arrTwo) {
 */
 
 
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   const resultObj = {};
   const arr = sentence.split('').join('')
   console.log(arr)
@@ -36,6 +36,7 @@ const letterPositions = function (sentence) {
 };
 console.log(letterPositions("hello"));
 
+module.exports = letterPositions
 /* Intended output somthing like:
 
 h: [0]

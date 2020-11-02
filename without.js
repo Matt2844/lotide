@@ -1,10 +1,10 @@
 // Copied functions from other problem. 
 
-const assertArraysEqual = function (arrOne, arrTwo) {
+const assertArraysEqual = function(arrOne, arrTwo) {
   return arrOne.join() === arrTwo.join() ? "True, match." : "False, NO match";
 }
 
-const eqArrays = function (arrOne, arrTwo) {
+const eqArrays = function(arrOne, arrTwo) {
   return arrOne !== arrTwo ? true : false;
 }
 
@@ -18,12 +18,12 @@ STEPS: Create an empty array. Compare array elements by iterating. Find the non-
 
 */
 
-const without = function (source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   let newArr = [];
   newArr = source.filter(item => !itemsToRemove.includes(item));
   return newArr;
 };
-
+module.exports = without
 // TEST CODE. From Compass. 
 
 console.log(without([1, 2, 3], [1])) // => [2, 3]
